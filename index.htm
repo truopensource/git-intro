@@ -103,6 +103,10 @@
 
     /* Media Queries */
     @media screen and (max-width: 767px) {}
+
+    #random-winner .name {
+      color: black;
+    }
   </style>
 </head>
 
@@ -238,15 +242,8 @@
         function setRandomWinner() {
           // todo: Complete this function, you should not have to alter anything outside the function body
           // tip: random int between 0 and max -> const randomIndex = Math.floor(Math.random() * max + 1) - 1;
-          return function ($) {
-          var avatars = $('.avatars .avatar');
-          var random = Math.floor(Math.random() * avatars.length);
-          if (avatars[random]) {
-            $('.game-container .game .winner').html(
-              $('<div>').addClass('avatar').html($(avatars[random]).html())
-            );
-          }
-        }(jQuery);
+          const a = document.querySelectorAll('.avatar');
+          document.querySelector('#random-winner').innerHTML = a[Math.floor(Math.random() * a.length)].innerHTML;
         }
       </script>
 
