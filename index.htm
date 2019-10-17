@@ -245,17 +245,21 @@
     
     <script>
       function setRandomWinner() {
+        function setRandomWinner() {
         // todo: Complete this function, you should not have to alter anything outside the function body
         // tip: random int between 0 and max -> const randomIndex = Math.floor(Math.random() * max + 1) - 1;
-        return function ($) {
-          var avatars = $('.avatars .avatar');
-          var random = Math.floor(Math.random() * avatars.length);
-          if (avatars[random]) {
-            $('.game-container .game .winner').html(
-              $('<div>').addClass('avatar').html($(avatars[random]).html())
-            );
-          }
-        }(jQuery);
+
+        const avatars = document.getElementsByClassName("avatar");
+
+        const max = avatars.length - 1;
+        const randomIndex = Math.floor(Math.random() * max + 1) - 1;
+        const randomWinner = avatars.item(randomIndex);
+        const clonedRandomWinner = randomWinner.cloneNode(true);
+
+        const currentWinner = document.getElementById("random-winner");
+        currentWinner.removeChild(currentWinner.firstElementChild);
+        currentWinner.appendChild(clonedRandomWinner);
+      }
       }
     </script>
 
