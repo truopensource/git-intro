@@ -1,6 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<head>
+    <title>Hacktoberfest!</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css?family=Germania+One&display=swap" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jdenticon@2.2.0" async></script>
+
+    <style>
+
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        
+        .jumbotron {
+            background-image: url("hacktoberfest.jpg");
+            background-size: cover;
+            height: 50vw;
+        }
+        
+        .avatars {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        
+        .avatar {
+            background-image: url("card.svg");
+            background-size: 100%;
+            width: 200px;
+            height: 246px;
+            display: grid;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 100fr;
+            grid-template-rows: 165px 100px;
+            justify-items: center;
+            margin: 20px;
+        }
+        
+        .avatar img,
+        svg {
+            margin-top: 15px;
+            width: 130px;
+            height: 130px;
+        }
+        
+        .avatar img {
+            border-radius: 10%;
+        }
+        
+        .name {
+            color: white;
+            margin-bottom: 50px;
+            font-family: "Germania One", cursive;
+        }
+        
+        .game-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+            margin-bottom: 100px;
+        }
+        
+        .game {
+            border: solid gold;
+            width: 450px;
+            height: 350px;
+            display: grid;
+            grid-template-columns: 100fr;
+            grid-template-rows: 250px 1fr;
+            justify-items: center;
+        }
+        
+        .winner {
+            flex-grow: 1;
+        }
+        
+        .button {
+            align-self: flex-end;
+            width: 80%;
+            margin-bottom: 15px;
+        }
+        /* Set black background color, white text and some padding */
+        
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+        /* Media Queries */
+        
+        @media screen and (max-width: 767px) {}
+
+      /* Remove the navbar's default margin-bottom and rounded borders */
+      .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+
+      .jumbotron {
+        background-image: url('hacktoberfest.jpg');
+        background-size: cover;
+        height: 50vw;
+      }
+
+      .avatars {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      .avatar {
+        background-image: url('card.svg');
+        background-size: 100%;
+        width: 200px;
+        height: 246px;
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 100fr;
+        grid-template-rows: 165px 100px;
+        justify-items: center;
+        margin: 20px;
+      }
+
+      .avatar img,
+      svg {
+        margin-top: 15px;
+        width: 130px;
+        height: 130px;
+      }
+
+      .avatar img {
+        border-radius: 10%;
+      }
+
+      .name {
+        color: white;
+        margin-bottom: 50px;
+        font-family: 'Germania One', cursive;
+      }
+
+      .game-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+        margin-bottom: 100px;
+      }
+
+      .game {
+        border: solid gold;
+        width: 450px;
+        height: 350px;
+        display: grid;
+        grid-template-columns: 100fr;
+        grid-template-rows: 250px 1fr;
+        justify-items: center;
+      }
+
+      .winner {
+        flex-grow: 1;
+      }
+
+      .button {
+        align-self: flex-end;
+        width: 80%;
+        margin-bottom: 15px;
+      }
+
+      /* Set black background color, white text and some padding */
+      footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+      }
+
+      /* Media Queries */
+      @media screen and (max-width: 767px) {
+      }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-dark">
+
+        <div>
+            <a class="navbar-brand" href="https://www.twostoryrobot.com/">
+                <img width="73px" src="tsr.svg" alt="" /></a>
+            <img width="40px" src="osc.png" alt="" />
+        </div>
+
+      <div>
+        <a class="navbar-brand" href="https://www.twostoryrobot.com/">
+          <img width="73px" src="tsr.svg" alt=""
+        /></a>
+        <a class="navbar-brand" href="https://ossn.club/clubs/21">
+          <img width="40px" src="osc.png" alt="" />
+        </a>
+      </div>
+
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container"></div>
+
+
 <head>
   <title>Hacktoberfest!</title>
   <meta charset="utf-8" />
@@ -114,8 +336,44 @@
       <a class="navbar-brand" href="https://ossn.club/clubs/21">
         <img width="40px" src="osc.png" alt="" />
       </a>
+
     </div>
   </nav>
+
+
+    <div class="avatars">
+        <div class="avatar">
+            <div>
+                <svg data-jdenticon-value="Oamar Kanji"></svg>
+            </div>
+            <h3 class="name">Oamar Kanji</h3>
+        </div>
+        <div class="avatar">
+            <div>
+                <img width="130" height="130" src="https://avatars.githubusercontent.com/okanji" alt="" />
+            </div>
+            <h3 class="name">Oamar Kanji</h3>
+        </div>
+        <div class="avatar">
+            <div>
+                <svg data-jdenticon-value="Brad Crump"></svg>
+            </div>
+            <h3 class="name">Brad Crump</h3>
+        </div>
+        <div class="avatar">
+            <div>
+                <img width="130" height="130" src="https://avatars.githubusercontent.com/BreadCrumbBuilds" alt="" />
+            </div>
+            <h3 class="name">Brad Crump</h3>
+        </div>
+
+        <div class="avatar">
+            <div>
+                <img width="130" height="130" src="https://avatars.githubusercontent.com/Clancinio" alt="" />
+            </div>
+            <h3 class="name">dean Clancy</h3>
+
+        <h3 class="name">Brad Crump</h3>
 
   <div class="jumbotron">
     <div class="container"></div>
@@ -125,6 +383,7 @@
     <div class="avatar">
       <div>
         <svg data-jdenticon-value="Oamar Kanji"></svg>
+
       </div>
       <h3 class="name">Oamar Kanji</h3>
     </div>
@@ -192,6 +451,41 @@
           <h3 class="name">Marco Lussetti</h3>
         </div>
     
+
+    <script>
+      function setRandomWinner() {
+        // todo: Complete this function, you should not have to alter anything outside the function body
+        // tip: random int between 0 and max -> const randomIndex = Math.floor(Math.random() * max + 1) - 1;
+      }
+    </script>
+
+    <div class="game-container">
+      <div class="game">
+        <div class="winner" id="random-winner">
+          <div></div>
+
+        </div>
+
+        <script>
+            function setRandomWinner() {
+                // todo: Complete this function, you should not have to alter anything outside the function body
+                // tip: random int between 0 and max -> const randomIndex = Math.floor(Math.random() * max + 1) - 1;
+            }
+        </script>
+
+        <div class="game-container">
+            <div class="game">
+                <div class="winner" id="random-winner">
+                    <div></div>
+                </div>
+                <button onClick="setRandomWinner()" type="button" class="button btn btn-outline-info">
+          Get Random Winner
+        </button>
+
+            </div>
+        </div>
+
+
         <div class="avatar">
           <div>
             <img
@@ -254,6 +548,7 @@
     <div class="game">
       <div class="winner" id="random-winner">
         <div></div>
+
       </div>
       <button
         onClick="setRandomWinner()"
@@ -266,7 +561,61 @@
   </div>
 
 
+    <ul>
+      <li>Fork the repository to your github account</li>
+      <li>Copy the forked repository URL</li>
+      <li>
+        In your teminal/ command prompt, clone the repository using: git clone
+        (paste the url here)
+      </li>
+      <li>
+        Use 'git status' to check what branch you are on (you should be in the
+        master branch)
+      </li>
+      <li>
+        Create a new branch called 'my-avatar' by typing: git checkout -b
+        my-avatar
+      </li>
+      <li>Open the code in a code editor and make the changes</li>
+      <li>Use 'git status' to see your changes</li>
+      <li>Use 'git add .' to add all your changes</li>
+      <li>
+        Commit your changes with a commit message: git commit -m "Added my
+        Avatar"
+      </li>
+      <li>Push your branch to your repo: git push origin my-avatar</li>
+      <li>
+        Log into your github account and find the branch that you pushed, there
+        should be a 'create pull request'
+      </li>
+      <li>Create the pull request</li>
+    </ul>
+
+
+        <ul>
+            <li>Fork the reposetory to your github account</li>
+            <li>Copy the forked reposetory URL</li>
+            <li>In your teminal/ command prompt, clone the repository using: git clone (paste the url here)</li>
+            <li>Use 'git status' to check what branch you are on (you should be in the master branch)</li>
+            <li>Create a new branch called 'my-avatar' by typing: git checkout -b my-avatar</li>
+            <li>Open the code in a code editor and make the changes</li>
+            <li>Use 'git status' to see your changes</li>
+            <li>Use 'git add .' to add all your changes</li>
+            <li>Commit your changes with a commit message: git commit -m "Added my Avatar"</li>
+            <li>Push your branch to your repo: git push origin my-avatar</li>
+            <li>Log into your github account and find the branch that you pushed, there should be a 'create pull request'</li>
+            <li>Create the pull request</li>
+        </ul>
+
+        <footer class="container-fluid text-center">
+            <a href="https://help.github.com/en/articles/set-up-git#next-steps-authenticating-with-github-from-git">Set up Git</a
+      >
+    </footer>
+  </body>
+
+
 
 </body>
+
 
 </html>
