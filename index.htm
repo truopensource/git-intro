@@ -132,9 +132,10 @@
     <div class="avatars" id="avatars"></div>
 
     <script>
+      // todo: Add your information to this array
       const hackers = [
         { name: "Oamar", githubUserName: "okanji" },
-        { name: "test", githubUserName: "" },
+        { name: "Tom", githubUserName: "" },
       ];
 
       hackers.forEach((o) => {
@@ -159,8 +160,7 @@
       function setRandomWinner() {
         // todo: Complete this function, you should not have to alter anything outside the function body
         // tip: random int between 0 and max -> const randomIndex = Math.floor(Math.random() * max + 1) - 1;
-        const a = document.querySelectorAll('.hacker');
-        document.querySelector('#random-winner').innerHTML = a[Math.floor(Math.random() * a.length)].innerHTML;
+        
       }
     </script>
 
